@@ -1,0 +1,67 @@
+<main>
+  <div class="concept">
+    <h1>Concept</h1>
+    <div class="concept-nav">
+      <ul>
+        <li class="concept-btn"><a href="#message">メッセージ</a></li>
+        <li class="concept-btn"><a href="#stylist">スタイリスト</a></li>
+        <li class="concept-btn"><a href="#gallery">お店画像</a></li>
+      </ul>
+    </div>
+    <div class="concept-img">
+      <%= image_tag("01.jpg") %>
+    </div>
+    <div id="message">
+      <div class="post-title">
+        <h2>Message</h2>
+      </div>
+      <div>
+        <p>
+          I's Hair Studio は、あなただけの貸切サロンです。<br>
+          お客様の貴重な時間を大切にしたいという思いから、待ち時間なく、最初から最後までひとりのスタイリストがおもてなしいたします。<br>
+          マンツーマンでのしっかりとしたカウンセリング、細かい説明と丁寧なサービスをさせていただきます。<br>
+          お客様のためだけの特別な空間のなかで、ゆったりとお過ごしいただきたいと思っております。
+        </p>
+      </div>
+    </div>
+    <div id="stylist">
+      <div class="post-title">
+        <h2>Stylist</h2>
+      </div>
+        <%= image_tag("stylist.jpg") %>
+      <div>
+        <table>
+          <tr>
+            <th>NAME</th><td>Yasufumi Ito</td>
+          </tr>
+          <tr>
+            <th>BIRTH</th><td>1978/09/16</td>
+          </tr>
+          <tr>
+            <th>GENDER</th><td>Male</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <div id="gallery">
+      <div class="post-title">
+        <h2>Gallery</h2>
+      </div>
+      <div class="gallery">
+        <div class="gallery-image">
+          <%= image_tag("01.jpg") %>
+        </div>
+        <div>
+          <ul class="gallery-thumbnails">
+            <li><%= image_tag("01.jpg") %></li>
+            <li><%= image_tag("02.jpg") %></li>
+            <li><%= image_tag("03.jpg") %></li>
+            <li><%= image_tag("04.jpg") %></li>
+            <li><%= image_tag("05.jpg") %></li>
+            <li><%= image_tag("06.jpg") %></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>

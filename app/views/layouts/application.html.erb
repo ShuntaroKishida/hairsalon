@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hairsalon</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    <link rel="stylesheet" href="https://unpkg.com/destyle.css@1.0.5/destyle.css">
+    <link href="https://fonts.googleapis.com/css2?family=Changa+One&family=Oswald&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC|M+PLUS+Rounded+1c:400,500&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/b8a7fea4d4.js"></script>
+    <%= javascript_importmap_tags %>
+  </head>
+
+  <body>
+    <header>
+      <p class="page-desc">東京都文京区小石川2-7-1　Tel:03-3813-2137</p>
+      <h1 class="page-title"><a>Hair Studio</a>I's</h1>
+      <p class="page-desc">Special Time in only your salon</p>
+    </header>
+
+    <section>
+      <div class="top-box">
+        <ul>
+          <li class="top-btn"><%= link_to 'ホーム', homes_path %></li>
+          <li class="top-btn"><%= link_to 'コンセプト', concepts_path %></li>
+          <li class="top-btn"><%= link_to '料金', prices_path %></li>
+          <li class="top-btn"><%= link_to '営業日', days_path %></li>
+          <li class="top-btn"><%= link_to 'アクセス', accesss_index_path %></li>
+        </ul>
+      </div>
+    </section>
+
+    <div class="containar">
+      <aside>
+        <div class="side-area">
+          <div class="side-box">
+            <h3>Menu</h3>
+            <ul>
+              <li><%= link_to 'ホーム', homes_path %></li>
+              <li><%= link_to 'コンセプト', concepts_path %></li>
+              <li><%= link_to '料金', prices_path %></li>
+              <li><%= link_to '営業日', days_path %></li>
+              <li><%= link_to 'アクセス', accesss_index_path %></li>
+            </ul>
+          </div>
+        </div>
+      </aside>
+
+      <%= yield %>
+
+    </div>
+
+    <footer>
+      <p>東京都文京区小石川2-7-1　Tel:03-3813-2137</p>
+      <ul class="footer-nav">
+        <li><%= link_to 'ホーム', homes_path %></li>
+        <li><%= link_to 'コンセプト', concepts_path %></li>
+        <li><%= link_to '料金', prices_path %></li>
+        <li><%= link_to '営業日', days_path %></li>
+        <li><%= link_to 'アクセス', accesss_index_path %></li>
+      </ul>
+      <p><small>&copy; 2023 Hair Studio I's</small></p>
+    </footer>
+  </body>
+</html>
