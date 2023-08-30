@@ -97,14 +97,14 @@ HEADER
 =========================================*/
 header {
     max-width: 800px;
-    margin: 2rem auto;
+    margin: 1rem auto;
 }
 
 .page-title {
     text-align: center;
     font-size: 3.75rem;
     font-family: 'Changa One', cursive;
-    margin: 1rem 0;
+    margin: .5rem 0;
 }
 
 .page-title a {
@@ -116,6 +116,28 @@ header {
     text-align: center;
     font-size: 1rem;
     margin-bottom: 0;
+}
+
+.user {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 1rem;
+}
+
+.user li {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #6a57bd;
+    border: #6a57bd 1px solid;
+    border-radius: 20px;
+    list-style: none;
+    padding: .5rem;
+    margin-left: 2rem;
+}
+
+.user li:first-child {
+    margin-left: 0;
 }
 
 /*
@@ -456,16 +478,12 @@ DESKTOP SIZE
         padding: 1rem 2.5rem 2.5rem;
     }
 
-    header {
-        height: 190px;
-    }
-
     .top-box {
         display: none;
     }
 
     .page-title {
-        margin: 1rem 0 2rem;
+        margin: 1rem 0 1rem;
     }
 
     .post-title h2 {
