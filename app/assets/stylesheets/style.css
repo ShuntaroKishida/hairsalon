@@ -120,16 +120,24 @@ header {
 
 .user {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     padding-top: 1rem;
 }
 
 .user li {
+    font-size: 2rem;
+    font-weight: bold;
     color: #6a57bd;
     border: #6a57bd 1px solid;
+    border-radius: 20px;
     list-style: none;
     padding: .5rem;
+    margin-left: 2rem;
+}
+
+.user li:first-child {
+    margin-left: 0;
 }
 
 /*
