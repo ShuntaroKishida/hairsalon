@@ -35,7 +35,7 @@
       <div class="top-box">
         <ul>
           <li class="top-btn"><%= link_to 'ホーム', homes_path %></li>
-          <li class="top-btn"><%= link_to 'コンセプト', concepts_path %></li>
+          <li class="top-btn"><%= link_to 'コンセプト', concepts_path, data: { turbo: false } %></li>
           <li class="top-btn"><%= link_to '料金', prices_path %></li>
           <li class="top-btn"><%= link_to '営業日', days_path %></li>
           <li class="top-btn"><%= link_to 'アクセス', accesss_index_path %></li>
@@ -50,7 +50,7 @@
             <h3>Menu</h3>
             <ul>
               <li><%= link_to 'ホーム', homes_path %></li>
-              <li><%= link_to 'コンセプト', concepts_path %></li>
+              <li><%= link_to 'コンセプト', concepts_path, data: { turbo: false } %></li>
               <li><%= link_to '料金', prices_path %></li>
               <li><%= link_to '営業日', days_path %></li>
               <li><%= link_to 'アクセス', accesss_index_path %></li>
@@ -67,7 +67,7 @@
       <p>東京都文京区小石川2-7-1　Tel:03-3813-2137</p>
       <ul class="footer-nav">
         <li><%= link_to 'ホーム', homes_path %></li>
-        <li><%= link_to 'コンセプト', concepts_path %></li>
+        <li><%= link_to 'コンセプト', concepts_path, data: { turbo: false } %></li>
         <li><%= link_to '料金', prices_path %></li>
         <li><%= link_to '営業日', days_path %></li>
         <li><%= link_to 'アクセス', accesss_index_path %></li>
