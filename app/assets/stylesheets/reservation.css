@@ -1,0 +1,43 @@
+.text-center {
+  padding: 1rem;
+}
+
+.text-center h1 {
+  text-align: center;
+  font-size: 2rem;
+  letter-spacing: 1rem;
+  font-weight: bold;
+}
+
+.text-center p {
+  text-align: center;
+  padding-top: 1rem;
+  color: blueviolet;
+}
+
+.calendar-heading {
+  text-align: center;
+  padding: 1rem;
+  color: blue;
+}
+
+.calendar-title {
+  padding: 0 2rem;
+  color: #949087;
+}
+
+.content {
+  text-align: center;
+}
+
+.form-group {
+  padding-bottom: 2rem;
+}
+
+.submit {
+  font-size: 2rem;
+  display: inline-block;
+  background-color: aqua;
+  padding: .5rem 1rem;
+  border-radius: 10px;
+}

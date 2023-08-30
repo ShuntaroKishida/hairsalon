@@ -7,4 +7,5 @@ Rails.application.routes.draw do
   resources :concepts, only: :index
   resources :days, only: :index
   resources :prices, only: :index
+  resources :reservations, only: [:index, :new, :show, :create]
 end

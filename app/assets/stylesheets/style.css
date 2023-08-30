@@ -19,7 +19,7 @@ p {
     line-height: 1.6;
 }
 
-.containar {
+.wrapper {
     max-width: 800px;
     margin: 0 auto;
     padding: 1.5rem;
@@ -471,7 +471,7 @@ ACCESS
 DESKTOP SIZE
 =========================================*/
 @media(min-width: 600px) {
-    .containar {
+    .wrapper {
         display: flex;
         justify-content: space-between;
         margin-bottom: 4rem;
@@ -517,15 +517,5 @@ DESKTOP SIZE
     .post-img {
         width: 220px;
         height: 180px;
-    }
-
-    table th::before {
-        display: inline-block;
-        content: '';
-        background: #f07bd5;
-        width: 8px;
-        height: 8px;
-        margin: 6px 10px 0 0;
-        border-radius: 50%;
     }
 }
