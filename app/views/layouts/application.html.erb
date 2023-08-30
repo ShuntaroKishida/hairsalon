@@ -19,6 +19,9 @@
       <p class="page-desc">東京都文京区小石川2-7-1　Tel:03-3813-2137</p>
       <h1 class="page-title"><a>Hair Studio</a>I's</h1>
       <p class="page-desc">Special Time in only your salon</p>
+      <div class="user">
+        <li><%= link_to current_user.name + " さま", edit_user_path(current_user) %></li>
+      </div>
     </header>
 
     <section>
