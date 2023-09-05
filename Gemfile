@@ -82,3 +82,4 @@ end
 
 gem "simple_calendar"
 gem 'sassc'
+gem 'pry-rails'
