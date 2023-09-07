@@ -26,7 +26,7 @@
           <li><%= link_to 'ご予約', reservations_path %></li>
         <% else %>
           <li><%= link_to 'お客さまログイン', new_user_session_path, class: "login" %></li>
-          <li><%= link_to '管理者ログイン', new_user_registration_path, class: "sign-up" %></li>
+          <li><%= link_to '管理者用', new_user_registration_path, class: "sign-up" %></li>
         <% end %>
       </div>
     </header>

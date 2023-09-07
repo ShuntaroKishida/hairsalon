@@ -4,6 +4,7 @@
       <div class='account-page__inner--left account-page__header'>
         <h2>Create Account</h2>
         <h5>新規アカウントの作成</h5>
+        <p style="color: red;">※管理者のみ作成可能となります※</p>
       </div>
       <div class='account-page__inner--right user-form'>
         <%= form_with model: resource, as: resource_name, url: registration_path(resource_name), local: true do |f|%>
@@ -39,6 +40,12 @@
             </div>
             <div class='field-input'>
               <%= f.password_field :password_confirmation, autocomplete: "off"%>
+            </div>
+          </div>
+          <div class='field'>
+            <p>管理者パスワード</p>
+            <div class='field-input'>
+              <%= f.password_field :admin_password, autocomplete: "admin_password" %>
             </div>
           </div>
           <div class='actions'>
